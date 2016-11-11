@@ -67,6 +67,7 @@ class M {
   }
 
   static equal(a, b) {
+    console.log('A/B/OUTCOME - ', a.allCaps(), b.allCaps(), a.allCaps() === b.allCaps())
     return a.allCaps() === b.allCaps()
   }
 
@@ -88,7 +89,7 @@ class M {
     return list
     .map(item => {
       console.log('thing/item/outcome - ',thing, item, M.equal(thing, item))
-      M.equal(thing, item)
+      return M.equal(thing, item)
     })
     .reduce(M[type])
   }
