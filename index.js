@@ -87,8 +87,8 @@ class M {
   static of(type, list=[], thing) {
     return list
     .map(item => {
-      console.log('thing/item/outcome - ',thing, item, M.equals(thing, item))
-      M.equals(thing, item)
+      console.log('thing/item/outcome - ',thing, item, M.equal(thing, item))
+      M.equal(thing, item)
     })
     .reduce(M[type])
   }
