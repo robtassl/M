@@ -2,7 +2,7 @@
   "name": "m",
   "version": "1.0.0",
   "description": "Lightweight ES6 Javascript Utility Library.",
-  "main": "m.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
