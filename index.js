@@ -67,8 +67,8 @@ class M {
   }
 
   static equal(a, b) {
-    console.log('A/B/OUTCOME - ', a.allCaps(), b.allCaps(), a.allCaps() === b.allCaps())
-    return a.allCaps() === b.allCaps()
+    console.log('A/B/OUTCOME - ', a.toString().toUpperCase(), b.toString().toUpperCase(), a.toString().toUpperCase() === b.toString().toUpperCase())
+    return a.toString().toUpperCase() === b.toString().toUpperCase()
   }
 
   static all(arr) {
