@@ -67,7 +67,6 @@ class M {
   }
 
   static equal(a, b) {
-    console.log('A/B/OUTCOME - ', a.toString().toUpperCase(), b.toString().toUpperCase(), a.toString().toUpperCase() === b.toString().toUpperCase())
     return a.toString().toUpperCase() === b.toString().toUpperCase()
   }
 
@@ -88,7 +87,6 @@ class M {
   static of(type, list=[], thing) {
     return list
     .map(item => {
-      console.log('thing/item/outcome - ',thing, item, M.equal(thing, item))
       return M.equal(thing, item)
     })
     .reduce(M[type])
