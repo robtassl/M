@@ -110,7 +110,9 @@ class M {
 
   static areSameType(arr) {
     arr = M.arrOrArgs(arr, arguments)
-    return arr(arr, arguments).map(item => M.is(M.typeOf(arr[0]), item))
+    return arr
+    .map(item => M.is(M.typeOf(arr[0]), item))
+    .reduce(this.both)
   }
 
   static isNOf(list, thing) {
